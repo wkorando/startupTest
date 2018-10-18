@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Sample Deploy Stage",
+  "longDescription": "The Delivery Pipeline automates continuous deployment.",
+  "type": "object",
+  "properties": {
+    "dev-region": {
+      "description": "The bluemix region",
+      "type": "string"
+    },
+    "dev-organization": {
+      "description": "The bluemix org",
+      "type": "string"
+    },
+    "dev-space": {
+      "description": "The bluemix space",
+      "type": "string"
+    },
+    "app-name": {
+      "description": "app name",
+      "type": "string"
+    },
+    "app-key": {
+      "description": "IAM api key",
+      "type": "string"
+    }
+  },
+  "required": ["dev-region", "dev-organization", "dev-space", "app-name", "api-key"]
+}
